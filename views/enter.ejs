@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+    
+</head>
+<body>
+    <div class="container mt-5" id="form" >
+        <form action="/home" method="POST">
+            <fieldset>
+                <legend><h2>Details</h2></legend>
+                <label for="name">Enter Name</label><br>
+                <input type="text" name="name" id="id" required><br>
+                <label for="email">Enter Email</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <label  for="phone">Enter Phone Numbber</label><br>
+                <input type="text" name="phone" id="phone"><br>
+                <label for="hrs">Enter time(IN 24 HRS FORMAT)</label><br>
+                <input type="number" name="cinh" id="cinh" min="0" max="23" required>
+                <input type="number" name="cinm" id="cinm" min="0" max="59" required>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
