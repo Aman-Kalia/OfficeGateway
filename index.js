@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/reception-db')
 .then(()=>{
     console.log("DB CONNECTED")
 })
-.catch((er)=>{
+.catch((err)=>{
     console.log(err)
 })
 app.set('view engine','ejs');
