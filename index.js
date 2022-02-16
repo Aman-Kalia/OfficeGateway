@@ -101,7 +101,7 @@ function sendexmail(email,couth,coutm){
   };
   sgMail.send(msg);
 }
-
-app.listen(3000,(req,res)=>{
+const PORT=process.env.PORT || 3000;
+app.listen(PORT,(req,res)=>{
     console.log("UP AT 3000");
 })
